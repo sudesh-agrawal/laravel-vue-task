@@ -8,7 +8,9 @@ class TestController extends Controller
 {
     public function controllerMethod()
     {
-        # code...
-        return view('welcome');
+        return response()->json([
+            'msg' => 'We should return only json'
+        ]);
+        
     }
 }
