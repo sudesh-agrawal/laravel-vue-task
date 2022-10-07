@@ -3,7 +3,19 @@ import Router from 'vue-router'
 Vue.use(Router)
 import firstPage from './components/pages/myFirstVuePage'
 import newRoutePage from './components/pages/newRoutePage'
+import hooks from './components/pages/basic/hooks'
+import methods from './components/pages/basic/methods'
+import { method } from 'lodash'
 const routes = [
+    //Project routes....
+    
+    
+    {
+        path: '/my-new-vue-route',
+        component: firstPage
+    },    
+
+    // Basic tutorials routes....
     {
         path: '/my-new-vue-route',
         component: firstPage
@@ -11,6 +23,16 @@ const routes = [
     {
         path: '/new-route',
         component: newRoutePage
+    },
+    // vue hooks
+    {
+        path: '/hooks',
+        component: hooks
+    },
+    // more basics
+    {
+        path: '/methods',
+        component: methods
     }
 ]
 
